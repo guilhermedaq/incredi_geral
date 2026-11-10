@@ -11,9 +11,9 @@ const NUMEROS = [
 const MENSAGEM = "Olá, quero evitar as altas taxas de protesto.";
 
 module.exports = (req, res) => {
-  // Aceita somente chamadas GET.
-  if (req.method !== "GET") {
-    res.setHeader("Allow", "GET");
+  // Aceita GET (acesso normal) e HEAD (verificação de link feita por Meta/apps).
+  if (req.method !== "GET" && req.method !== "HEAD") {
+    res.setHeader("Allow", "GET, HEAD");
     return res.status(405).send("Método não permitido");
   }
 
