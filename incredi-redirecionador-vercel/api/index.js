@@ -5,8 +5,9 @@
 //   https://incredigeral.vercel.app          -> texto padrão (protesto)
 //   https://incredigeral.vercel.app/igreen   -> texto IGREEN
 //   https://incredigeral.vercel.app/dental   -> texto Dental
+//   https://incredigeral.vercel.app/magnum   -> texto MAGNUM
 // Teste (mostra o sorteio sem abrir o WhatsApp): acrescente ?teste=1
-//   ex.: https://incredigeral.vercel.app/dental?teste=1
+//   ex.: https://incredigeral.vercel.app/magnum?teste=1
 
 const { randomInt } = require("crypto");
 
@@ -21,7 +22,8 @@ const MENSAGEM_PADRAO = "Olá, quero evitar as altas taxas de protesto.";
 // Um caminho por cliente (sempre em minúsculas, sem acento e sem espaço).
 const MENSAGENS = {
   igreen: "Olá, quero evitar as medidas legais referente à IGREEN.",
-  dental: "Olá, quero evitar as altas taxas de protesto referente à Dental."
+  dental: "Olá, quero evitar as altas taxas de protesto referente à Dental.",
+  magnum: "Olá, quero evitar as altas taxas de protesto referente à MAGNUM."
 };
 
 module.exports = (req, res) => {
