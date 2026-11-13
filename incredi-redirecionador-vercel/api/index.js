@@ -6,6 +6,7 @@
 //   https://incredigeral.vercel.app/igreen   -> texto IGREEN
 //   https://incredigeral.vercel.app/dental   -> texto Dental
 //   https://incredigeral.vercel.app/magnum   -> texto MAGNUM
+//   https://incredigeral.vercel.app/dental-negociacao -> texto Dental (negociação)
 // Teste (mostra o sorteio sem abrir o WhatsApp): acrescente ?teste=1
 //   ex.: https://incredigeral.vercel.app/magnum?teste=1
 
@@ -23,7 +24,8 @@ const MENSAGEM_PADRAO = "Olá, quero evitar as altas taxas de protesto.";
 const MENSAGENS = {
   igreen: "Olá, quero evitar as medidas legais referente à IGREEN.",
   dental: "Olá, quero evitar as altas taxas de protesto referente à Dental.",
-  magnum: "Olá, quero evitar as altas taxas de protesto referente à MAGNUM."
+  magnum: "Olá, quero evitar as altas taxas de protesto referente à MAGNUM.",
+  "dental-negociacao": "Olá, quero aproveitar as oportunidades de negociação."
 };
 
 module.exports = (req, res) => {
