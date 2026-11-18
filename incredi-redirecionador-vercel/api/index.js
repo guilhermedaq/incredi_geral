@@ -1,5 +1,6 @@
 // Redirecionador Incredi — Vercel
-// Cada acesso escolhe aleatoriamente um dos WhatsApps e abre com o texto do cliente.
+// Todos os links levam ao WhatsApp 5521984491940 com o texto do cliente.
+// Para voltar a dividir entre vários números, basta incluir mais números na lista NUMEROS.
 //
 // Links:
 //   https://incredigeral.vercel.app          -> texto padrão (protesto)
@@ -7,13 +8,12 @@
 //   https://incredigeral.vercel.app/dental   -> texto Dental
 //   https://incredigeral.vercel.app/magnum   -> texto MAGNUM
 //   https://incredigeral.vercel.app/dental-negociacao -> texto Dental (negociação)
-// Teste (mostra o sorteio sem abrir o WhatsApp): acrescente ?teste=1
+// Teste (mostra o sorteio sem abrir o WhatsApp): acrescente ?te  ste=1
 //   ex.: https://incredigeral.vercel.app/magnum?teste=1
 
 const { randomInt } = require("crypto");
 
 const NUMEROS = [
-  "5521984456488",
   "5521984491940"
 ];
 
